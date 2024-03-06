@@ -1,8 +1,93 @@
+.off-screen-menu {
+    background-color: #24262b;
+    height: 100vh;
+    width: 100%;
+    max-width: 450px;
+    position: fixed;
+    top: 0;
+    right: -450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: 0.3s ease;
+    z-index: 1;
+}
+
+.off-screen-menu ul li {
+    margin-bottom: .7em;
+    transition: .2s;
+}
+
+.off-screen-menu ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-size: 3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+    transition: .2s;
+}
+
+.off-screen-menu ul li:hover,
+.off-screen-menu ul li a:hover {
+    transform: scale(1.2);
+
+    filter: drop-shadow(0 0 00.25rem rgb(246, 214, 87));
+}
+
+.off-screen-menu.active {
+    right: 0;
+    z-index: 1;
+}
+
+.ham-menu {
+    height: 50px;
+    width: 50px;
+    margin-left: auto;
+    position: relative;
+}
+
+.ham-menu span {
+    height: 5px;
+    width: 100%;
+    background-color: #e1be32;
+    border-radius: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.3s ease;
+}
+
+.ham-menu span:nth-child(1) {
+    top: 25%;
+}
+
+.ham-menu span:nth-child(3) {
+    top: 75%;
+}
+
+.ham-menu.active span:nth-child(1) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.ham-menu.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.ham-menu.active span:nth-child(3) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
 /* Laptop */
 
 @media all and (min-width: 768px) and (max-width: 1920px) {
     header {
-        padding: 20px 45px;
+        padding: 20px 30px;
     }
 
     header .menu {
