@@ -1,0 +1,54 @@
+/* Laptop */
+
+@media all and (min-width: 768px) and (max-width: 1920px) {
+    header {
+        padding: 20px 45px;
+    }
+
+    header .menu {
+        display: none;
+    }
+}
+
+/* tablet */
+
+@media all and (max-width: 1024px) {
+    main .Offer-Desc {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+      }
+}
+
+/* phone */
+
+@media all and (max-width: 767px) {
+    header nav ul li a {
+        display: none;
+    }
+
+    main .MainSun {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        margin: 30px 30px 65px 45px;
+    }
+
+    main .MainSun .content,
+    main img {
+        width: 100%;
+    }
+
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media all and (max-width: 574px){
+    .footer-col{
+      width: 100%;
+    }
+}
+  
