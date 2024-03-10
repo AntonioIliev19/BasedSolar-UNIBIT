@@ -1,0 +1,173 @@
+main .AboutUs,
+main .Trust {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 30px 30px 65px 45px;
+}
+
+main .AboutUs .content,
+main .Trust .content {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    line-height: 1.3;
+    align-items: center;
+    justify-content: center;
+}
+
+main .AboutUs .title,
+main .Trust .title {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: xx-large;
+    font-weight: 300;
+    margin-bottom: .2em;
+}
+
+main .AboutUs .description,
+main .Trust .description {
+    margin: 1.2em 0em;
+    line-height: 1.4;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+}
+
+
+main .AboutUs .quote_btn {
+    display: block;
+    margin: 15px 0px;
+    padding: 20px;
+    font-size: large;
+    font-weight: 700;
+    color: white;
+    background-color: #F7DD72;
+    border: 0px;
+    border-radius: 0.4em;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+main .AboutUs .quote_btn span {
+    margin-left: 0.5rem;
+    transition: 0.2s;
+}
+
+main .AboutUs .quote_btn:hover, .quote_btn:active {
+    background-color: rgb(246, 214, 87);
+    filter: drop-shadow(0 0 00.25rem rgb(246, 214, 87));
+}
+
+main .AboutUs .quote_btn:hover span, .quote_btn:active span {
+    margin-left: 1.0rem;
+}
+
+main .AboutUs img,
+main .Trust img {
+    width: 40%;
+    border-radius: 35px;
+    filter: drop-shadow(0 0 0.75rem rgb(246, 214, 87));
+}
+
+main .WhyUs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(https://www.sungoldsolar.com/wp-content/uploads/2022/11/avout-image-e.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 60px 0px;
+    margin-bottom: 2em;
+}
+
+main .WhyUs .info {
+    width: 50%;
+    text-align: center;
+    color: white;
+}
+
+main .WhyUs .info .title {
+    margin-bottom: 1em;
+    font-size: xx-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+}
+
+main .WhyUs .info .description {
+    line-height: 1.3;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+    font-weight: 400;
+    margin-bottom: 2em;
+}
+
+main .stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    text-align: center;
+    gap: 2em;
+}
+
+main .stats .stat-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+}
+
+main .stats .stat-card:hover {
+    transform: translateY(-5.5%);
+    
+}
+
+main .stats .stat-card .title {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    margin: 10px;
+    font-size: 2em;
+    color: #e1be32;
+}
+
+main .stats .stat-card .subtitle {
+    font-family: sans-serif;
+    font-size: .9em;
+    color: white;
+}
+
+
+/* tablet */
+
+@media all and (max-width: 1024px) {
+
+    main .WhyUs {
+        padding: 40px 0px;
+    }
+
+    main .stats {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+      }
+}
+
+@media all and (max-width: 767px) {
+
+    main .AboutUs,
+    main .Trust {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        margin: 30px 30px 65px 45px;
+    }
+
+    main .AboutUs .content,
+    main .AboutUs img,
+    main .Trust .content,
+    main .Trust img {
+        width: 100%;
+    }
+
+}

@@ -26,10 +26,12 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
 body {
 	line-height: 1;
     background-color: #f8f8f8;
 }
+
 ol, ul {
 	list-style: none;
 }
@@ -107,12 +109,17 @@ header .titles .title {
     color: #F7DD72;
 }
 
+#activePage {
+    color: #e1be32;
+}
+
 nav {
     display: flex;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 300;
     text-transform: uppercase;
     z-index: 1;
+    cursor: pointer;
 }
 
 main .MainSun {
@@ -175,7 +182,7 @@ main .MainSun .quote_btn:hover span, .quote_btn:active span {
     margin-left: 1.0rem;
 }
 
-main img {
+main .MainSun img {
     width: 40%;
     border-radius: 15px;
     filter: drop-shadow(0 0 0.75rem rgb(20, 87, 220));
@@ -242,6 +249,12 @@ ul{
     line-height: 1.5;
 	font-family: 'Poppins', sans-serif;
 }
+
+.footer a {
+    color: #f6d657;
+    text-decoration: none;
+}
+
 .footer-col{
    width: 25%;
    padding: 0 15px;
