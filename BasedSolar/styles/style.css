@@ -154,7 +154,8 @@ main .MainSun .description {
     font-family: 'Poppins', sans-serif;
 }
 
-main .MainSun .quote_btn {
+main .MainSun .quote_btn,
+.main-404 .error-container .btn-home {
     display: block;
     margin: 15px 0px;
     padding: 20px;
@@ -168,17 +169,20 @@ main .MainSun .quote_btn {
     cursor: pointer;
 }
 
-main .MainSun .quote_btn span {
+main .MainSun .quote_btn span,
+.main-404 .error-container .btn-home {
     margin-left: 0.5rem;
     transition: 0.2s;
 }
 
-main .MainSun .quote_btn:hover, .quote_btn:active {
+main .MainSun .quote_btn:hover, .quote_btn:active,
+.main-404 .error-container .btn-home {
     background-color: rgb(246, 214, 87);
     filter: drop-shadow(0 0 00.25rem rgb(246, 214, 87));
 }
 
-main .MainSun .quote_btn:hover span, .quote_btn:active span {
+main .MainSun .quote_btn:hover span, .quote_btn:active span,
+.main-404 .error-container .btn-home {
     margin-left: 1.0rem;
 }
 
@@ -316,3 +320,22 @@ ul{
     text-align: center;
     color: white;
 }
+
+.main-404 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    text-align: center;
+}
+
+.error-container h1 {
+    font-size: 6em;
+}
+
+.error-container h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+
